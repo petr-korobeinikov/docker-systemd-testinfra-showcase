@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: install nginx
+      ansible.builtin.apt:
+        name:
+          - nginx
+        state: present
+
+    - name: start and enable nginx
+      ansible.builtin.systemd:
+        name: nginx
+        state: started
+        enabled: yes

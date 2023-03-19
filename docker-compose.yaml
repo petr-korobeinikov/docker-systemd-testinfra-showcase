@@ -1,0 +1,8 @@
+services:
+  template:
+    ports:
+      - 22:22
+    build: .
+    init: true
+    # stop_signal: SIGKILL
+    # stop_grace_period: 0s
