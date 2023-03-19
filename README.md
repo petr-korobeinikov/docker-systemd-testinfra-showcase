@@ -1,5 +1,7 @@
 # docker-systemd-testinfra-showcase
 
+- https://principal-engineering.ru/posts/docker-systemd-testinfra/
+
 ## Пример
 
 ```shell
